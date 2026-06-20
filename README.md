@@ -51,3 +51,5 @@ npm run dev
 ```
 
 Browse to **http://localhost:5173** to view the main dashboard!
+
+# Smart-Crop-Recommendation-and-yield-prediction-system
