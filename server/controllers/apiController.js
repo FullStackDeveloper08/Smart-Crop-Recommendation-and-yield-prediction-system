@@ -1,6 +1,6 @@
 const { createNotificationHelper } = require('./notificationController');
 
-const ML_SERVICE_URL = process.env.ML_SERVICE_URL || 'http://127.0.0.1:5000';
+const ML_SERVICE_URL = process.env.ML_SERVICE_URL || 'https://smart-crop-ml-service.onrender.com';
 const WEATHER_API_KEY = process.env.WEATHER_API_KEY || '';
 
 const getWeather = async (req, res) => {
