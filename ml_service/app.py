@@ -9,6 +9,20 @@ import pandas as pd
 app = Flask(__name__)
 CORS(app)
 
+@app.route('/')
+def index():
+    return jsonify({
+        "status": "healthy",
+        "service": "Smart Crop ML Service API",
+        "endpoints": [
+            "/irrigation",
+            "/market",
+            "/recommend-crop",
+            "/predict-yield",
+            "/analyze-soil"
+        ]
+    })
+
 # Model paths
 BASE_DIR = os.path.dirname(__file__)
 CROP_REC_MODEL_PATH = os.path.join(BASE_DIR, "crop_rec_model.pkl")
